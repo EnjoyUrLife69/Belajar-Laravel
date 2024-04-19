@@ -86,3 +86,8 @@ Route::get('/bmi/{name}/{bb}/{tb}', function ($name, $bb, $tb) {
         "keterangan : $ket";
 
 });
+
+// Route Optimal Parameter -> dtandai dengan ?
+Route::get('/myname/{name?}', function ($a = "abdu") {
+    return "my name is $a";
+});
